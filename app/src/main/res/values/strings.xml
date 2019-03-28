@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Promo Descuento App</string>
+    <string name="title_toolbar">LA 24 GNC - PROMO DESCUENTO </string>
+    <string name="title_main_activity">PROMO DESCUENTO</string>
+    <string name="valor_descuento">0</string>
+    <string name="text_valor_final">0.00</string>
+    <string name="hint_edit_text_precio_surtidor">PRECIO SURTIDOR ($)</string>
+    <string name="calcular_button">CALCULAR</string>
+    <string name="refrescar_button">NUEVO CALCULO</string>
+    <string name="imagen_ajustes">imagen ajustes</string>
+    <string name="tilte_porcentaje_descuento">Defina el porcentaje de descuento</string>
+    <string name="porcentaje_descuento_hint">PORCENTAJE DE DESCUENTO (%)</string>
+    <string name="cancelar_button">CANCELAR</string>
+    <string name="guardar_button">GUARDAR</string>
+    <string name="descuento_texto">% descuento</string>
+    <string name="divisa_valor_final">$</string>
+    <string name="label_precio_con_descuento">PRECIO CON DESCUENTO</string>
+</resources>
