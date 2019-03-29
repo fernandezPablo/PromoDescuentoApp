@@ -5,6 +5,7 @@ import android.annotation.SuppressLint
 import android.content.pm.PackageManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.design.widget.FloatingActionButton
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AlertDialog
@@ -24,7 +25,7 @@ class MainActivity() : AppCompatActivity(), IMainActivity {
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main2)
 
         val mBuilder = AlertDialog.Builder(this)
         val mView = layoutInflater.inflate(R.layout.alert_dialog_settings,null)
@@ -54,12 +55,12 @@ class MainActivity() : AppCompatActivity(), IMainActivity {
             }
         }
 
-        val calcularButton = findViewById<Button>(R.id.calcular_button)
+        val calcularButton = findViewById<FloatingActionButton>(R.id.fbCalculate)
         calcularButton.setOnClickListener {
             this.presenter.calcularPrecioConDescuento()
         }
 
-        val refrescarButton = findViewById<Button>(R.id.refrescar_button)
+        val refrescarButton = findViewById<FloatingActionButton>(R.id.fbRefresh)
         refrescarButton.setOnClickListener {
             this.nuevoCalculo()
         }
@@ -86,9 +87,9 @@ class MainActivity() : AppCompatActivity(), IMainActivity {
 
     override fun setMontoConDescuento(monto: Double) {
        val montoConDescuentoTextView = findViewById<TextView>(R.id.precio_con_descuento_text_view)
-        val decimalFormat = DecimalFormat("#.##")
+        val decimalFormat = DecimalFormat("#,###.##")
         decimalFormat.roundingMode = RoundingMode.CEILING
-        montoConDescuentoTextView.setText(decimalFormat.format(monto))
+        montoConDescuentoTextView.setText("$ ${decimalFormat.format(monto)}")
     }
 
     override fun getDescuento(): Int {

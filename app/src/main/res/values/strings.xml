@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Promo Descuento App</string>
-    <string name="title_toolbar">LA 24 GNC - PROMO DESCUENTO </string>
+    <string name="title_toolbar">LA 24 GNC - PROMO DESCUENTO</string>
     <string name="title_main_activity">PROMO DESCUENTO</string>
     <string name="valor_descuento">0</string>
-    <string name="text_valor_final">0.00</string>
+    <string name="text_valor_final">$ 0.00</string>
     <string name="hint_edit_text_precio_surtidor">PRECIO SURTIDOR ($)</string>
     <string name="calcular_button">CALCULAR</string>
     <string name="refrescar_button">NUEVO CALCULO</string>
@@ -15,4 +15,5 @@
     <string name="descuento_texto">% descuento</string>
     <string name="divisa_valor_final">$</string>
     <string name="label_precio_con_descuento">PRECIO CON DESCUENTO</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>
